@@ -120,7 +120,6 @@ public class LoadView extends View {
     public void setPercent(@FloatRange(from=0.0, to=1.0) float percent){
         this.mPercent=percent;
         this.mPercentStr=Math.round(percent*100)+"%";
-        Log.i("lx","setPercent"+mPercentStr);
         invalidate();
     }
 
@@ -130,12 +129,11 @@ public class LoadView extends View {
         //设置大小请根据半径、小长方形大小来设置
         int defaultSize = 2 * (mInnerRadius + mRectangleHeight);
         setMeasuredDimension(defaultSize, defaultSize);
-        Log.i("lx","onMeasure"+getMeasuredWidth()+";"+getMeasuredHeight());
+
     }
 
     @Override
     protected void onDraw(Canvas canvas) {
-        Log.i("lx","onDraw");
         int hasDownCount = 0;//已经下载百分比换算成需要画多少个已经load的长方形
         hasDownCount = Math.round(mPercent * mRectangleNum);//才用四舍五入
         canvas.save();
