@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <declare-styleable name="LoadView">
+        <!-- 已经load的颜色值-->
+        <attr name="HasLoadColor" format="color" />
+        <!-- 没有load的颜色值-->
+        <attr name="NormalLoadColor" format="color" />
+        <!-- 小长方形的宽度-->
+        <attr name="RectangleWidth" format="dimension" />
+        <!-- 小长方形的高度-->
+        <attr name="RectangleHeight" format="dimension" />
+        <!-- 小长方形的个数-->
+        <attr name="RectangleNum" format="integer" />
+        <!-- 内半径大小-->
+        <attr name="InnerRadius" format="dimension" />
+        <!-- 文字大小-->
+        <attr name="TextSize" format="dimension" />
+        <!-- 小长方形圆角度-->
+        <attr name="RectangleRadius" format="dimension" />
+    </declare-styleable>
+</resources>
